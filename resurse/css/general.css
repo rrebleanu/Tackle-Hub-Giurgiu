@@ -33,11 +33,11 @@ html {
     margin: 20px auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-        "z1 z1 z1 z1"
+       "z1 z1 z1 z1"
         "z2 z2 z3 z3"
         "z2 z2 z4 z4"
         "z5 z6 z6 z7"
-        "z8 z8 z8 z8";
+        "z8 z8 z8 z8"; 
 }
 
 .zone-1 { grid-area: z1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
@@ -84,11 +84,12 @@ header, footer {
 }
 
 .iframe-tabs {
-    order: 2;
+    order: 3;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 50%;
+    gap: 8px;
+    width: 70%;
     align-self: flex-end;
     margin-top: -1px;
 }
@@ -99,21 +100,19 @@ header, footer {
     justify-content: center;
     flex: 1;
     min-width: 0;
-    height: 40px;
+    height: 30px;
     text-align: center;
     white-space: normal;
     line-height: 1.1;
-    padding: 0 5px;
+    padding: 12px 5px;
     font-size: 0.65rem;
     font-weight: bold;
     text-decoration: none;
     background-color: var(--color-secondary);
     color: var(--color-accent);
     border: 1px solid var(--color-primary);
-    border-top: none;
-    border-radius: 0 0 8px 8px;
-    margin-left: 2px;
-    transition: all 0.4s ease;
+    border-radius: 0 0 12px 12px;
+    transition: all 0.4s ease; 
 }
 
 .iframe-tabs a:hover {
@@ -149,8 +148,8 @@ table thead th {
     padding: 12px;
 }
 
-table tbody tr:nth-child(even) { background-color: rgba(147, 181, 198, 0.2); }
-table tbody tr:nth-child(odd) { background-color: rgba(92, 107, 82, 0.1); }
+table tbody tr:nth-child(even) { background-color: rgba(147, 181, 198, 0.7); }
+table tbody tr:nth-child(odd) { background-color: rgba(92, 107, 82, 0.5); }
 
 table tbody tr { transition: background-color 0.5s ease; }
 table tbody tr:hover { background-color: var(--color-secondary) !important; }
@@ -176,7 +175,7 @@ table th, table td {
     transition: opacity 0.5s ease;
 }
 
-.cerc-rotativ {
+.rotating-circle {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -190,7 +189,7 @@ table th, table td {
     transition: transform 0.6s ease-in-out;
 }
 
-.sageata {
+.arrow {
     position: relative;
     font-size: 32px;
     color: var(--color-primary);
@@ -200,8 +199,8 @@ table th, table td {
 }
 
 #link-top:hover { opacity: 1; }
-#link-top:hover .cerc-rotativ { transform: rotate(360deg); }
-#link-top:hover .sageata { text-shadow: 0 0 0px transparent; }
+#link-top:hover .rotating-circle { transform: rotate(360deg); }
+#link-top:hover .arrow { text-shadow: 0 0 0px transparent; }
 
 .tooltip-text {
     visibility: hidden;

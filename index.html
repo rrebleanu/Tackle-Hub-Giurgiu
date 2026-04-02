@@ -19,28 +19,38 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/imagini/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" />
 
+    <!-- Conectare css -->
+    <link rel="stylesheet" type="text/css" href="./resurse/css/general.css">
+    <link rel="stylesheet" href="/resurse/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/resurse/css/print.css" type="text/css" media="print" />
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;700&display=swap"
         rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
     <header id="top">
-        <h1>Danube Tackle Hub <span>Giurgiu</span></h1>
+        <h1>Danube Tackle Hub <i class="fa-solid fa-anchor fa-beat-fade"></i> <span>Giurgiu</span></h1>
         <nav>
             <ul class="meniu">
                 <li>
                     <div>Acasa</div>
                     <ul>
                         <li><a href="#welcome">Bine ati venit</a></li>
-                        <li><a href="#categorii">Categorii Specii Dunare</a></li>
-                        <li><a href="#prohibitie">Perioada Prohibiție</a></li>
-                        <li><a href="#evenimente">Evenimente</a></li>
-                        <li><a href="#cote">Cota Dunării</a></li>
+                        <li><a href="#categories">Categorii Specii Dunare</a></li>
+                        <li><a href="#prohibition">Perioada Prohibiție</a></li>
+                        <li><a href="#events">Evenimente</a></li>
+                        <li><a href="#stats">Cota Dunării</a></li>
                     </ul>
                 </li>
                 <li>
@@ -61,126 +71,162 @@
     </header>
 
     <main>
-        <section id="welcome">
-            <hgroup>
-                <h2>Bine ați venit la Danube Tackle Hub</h2>
-                <p>Specialiști în <b>echipamente de pescuit</b> adaptate <b> pescuitului la Dunare</b>.</p>
-            </hgroup>
-            <article>
-                <h3>Provocarea Apelor Libere</h3>
-                <p>Spre deosebire de alte <b>magazine articole pescuit</b>, Danube Tackle Hub îți aduce cele mai bune
-                    <dfn title="Echipament capabil să reziste la abraziune și forță extremă">articole de pescuit
-                        de Dunare</dfn>.
-                    Aici găsești echipamente pentru <strong>pescuitul in curenti puternici</strong>!
-                </p>
+        <div id="page-grid">
 
-                <p>Ramaneti activi pe site pentru a afla ultimele noutati legate de <i>pescuitul pe Dunare</i> și pentru
-                    a
-                    prinde cele
-                    mai bune
-                    <b>promotii pescuit</b> la <ins>echipamentele de pescuit</ins>.
-                </p>
-
-                <blockquote cite="https://www.info-delta.ro/">
-                    <p>
-                        Practicarea pescuitului în curent puternic, cum ar fi pe Dunăre, necesită o abordare
-                        specializată, atât din punctul de vedere al echipamentului tehnic, cât și al respectării
-                        riguroase a legislației, în special în zona de frontieră.
+            <section id="welcome" class="zone-1">
+                <hgroup>
+                    <h2>Bine ați venit la Danube Tackle Hub</h2>
+                    <p>Specialiști în <b>echipamente de pescuit</b> adaptate <b> pescuitului la Dunare</b>.</p>
+                </hgroup>
+                <article>
+                    <h3>Provocarea Apelor Libere</h3>
+                    <p>Spre deosebire de alte <b>magazine articole pescuit</b>, Danube Tackle Hub îți aduce cele mai
+                        bune <dfn title="Echipament capabil să reziste la abraziune și forță extremă">articole de
+                            pescuit de Dunare</dfn>. Aici găsești echipamente pentru <strong>pescuitul in curenti
+                            puternici</strong>!</p>
+                    <p>Ramaneti activi pe site pentru a afla ultimele noutati legate de <i>pescuitul pe Dunare</i> și
+                        pentru a prinde cele mai bune <b>promotii pescuit</b> la <ins>echipamentele de pescuit</ins>.
                     </p>
-                </blockquote>
-                <p>— Extras din lucrarea <cite>Ghidul de Pescuit pe Dunăre</cite>, sursa Info-Delta.</p>
+                    <blockquote cite="https://www.info-delta.ro/">
+                        <p>Practicarea pescuitului în curent puternic, cum ar fi pe Dunăre, necesită o abordare
+                            specializată, atât din punctul de vedere al echipamentului tehnic, cât și al respectării
+                            riguroase a legislației, în special în zona de frontieră.</p>
+                    </blockquote>
+                    <p>— Extras din lucrarea <cite>Ghidul de Pescuit pe Dunăre</cite>, sursa Info-Delta.</p>
+                    <p>Motto-ul magazinului nostru este: <q>Echipamentul corect salvează partida de pescuit.</q></p>
+                </article>
+                <aside>
+                    <p>Sfat: Verificați mereu perioada de prohibitie si cotele apelor înainte de a căuta noi <b>locuri
+                            de pescuit Dunare</b>!</p>
+                </aside>
+            </section>
 
-                <p>Motto-ul magazinului nostru este: <q>Echipamentul corect salvează partida de pescuit.</q></p>
-            </article>
+            <section id="prohibition" class="zone-2">
+                <h2>Reglementări și Dimensiuni Legale 2026</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <caption>Calendar Prohibiție Dunăre și Brațul Ara</caption>
+                        <thead>
+                            <tr>
+                                <th>Specie Pește</th>
+                                <th>Perioadă Prohibiție</th>
+                                <th>Dimensiune Minimă</th>
+                                <th>Metodă Recomandată</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Șalău</td>
+                                <td>20 Martie - 10 Mai</td>
+                                <td>40 cm</td>
+                                <td rowspan="2">Spinning / Jigging</td>
+                            </tr>
+                            <tr>
+                                <td>Avat</td>
+                                <td>20 Martie - 10 Mai</td>
+                                <td>30 cm</td>
+                            </tr>
+                            <tr>
+                                <td>Somn</td>
+                                <td>9 Aprilie - 7 Iunie</td>
+                                <td>50 cm</td>
+                                <td>Clonc / Staționar</td>
+                            </tr>
+                            <tr>
+                                <td>Mreană</td>
+                                <td>9 Aprilie - 7 Iunie</td>
+                                <td>33 cm</td>
+                                <td>Heavy Feeder</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Prohibiție Generală (Fluviu)</td>
+                                <td>Toate speciile</td>
+                                <td>60 de zile</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Consultă periodic <cite>Ordinul de Prohibiție 2026</cite> pentru
+                                    actualizări.
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
 
-            <aside>
-                <p>Sfat: Verificați mereu perioada de prohibitie si cotele apelor înainte de a căuta noi <b>locuri de
-                        pescuit Dunare</b>!</p>
-            </aside>
+            <section id="events" class="zone-3">
+                <h2>Evenimente Comunitare Giurgiu</h2>
+                <ol>
+                    <li>
+                        <time datetime="2026-03-15T10:00">15 Martie 2026, ora 10:00</time>:
+                        <b>Lansare Sonare Lowrance</b> - Demonstrație tehnică în portul Giurgiu.
+                    </li>
+                    <li>
+                        <time datetime="2026-04-05T09:00">5 Aprilie 2026, ora 09:00</time>:
+                        <b>Atelier de monturi de Dunare</b> - Învățăm să facem monturi rezistente.
+                    </li>
+                </ol>
+            </section>
 
-        </section>
+            <section id="categories" class="zone-4">
+                <h2><i class="fa-solid fa-fish"></i> Echipamente pe Specii</h2>
+                <dl>
+                    <dt>Pescuit la Somn</dt>
+                    <dd>Lansete de forță, mulinete robuste și <abbr
+                            title="Accesoriu pentru atragerea somnului prin sunet">cloncuri</abbr> artizanale.</dd>
+                    <dt>Pescuit la Crap</dt>
+                    <dd>Lansete heavy, plumbi de curent și <ins>monturi rezistente la scoici</ins>.</dd>
+                </dl>
+            </section>
 
-        <section id="prohibitie">
-            <h2>Reglementări și Dimensiuni Legale 2026</h2>
-            <table>
-                <caption>Calendar Prohibiție Dunăre și Brațul Ara</caption>
-                <thead>
-                    <tr>
-                        <th>Specie Pește</th>
-                        <th>Perioadă Prohibiție</th>
-                        <th>Dimensiune Minimă</th>
-                        <th>Metodă Recomandată</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Șalău</td>
-                        <td>20 Martie - 10 Mai</td>
-                        <td>40 cm</td>
-                        <td rowspan="2">Spinning / Jigging</td>
-                    </tr>
-                    <tr>
-                        <td>Avat</td>
-                        <td>20 Martie - 10 Mai</td>
-                        <td>30 cm</td>
-                    </tr>
-                    <tr>
-                        <td>Somn</td>
-                        <td>9 Aprilie - 7 Iunie</td>
-                        <td>50 cm</td>
-                        <td>Clonc / Staționar</td>
-                    </tr>
-                    <tr>
-                        <td>Mreană</td>
-                        <td>9 Aprilie - 7 Iunie</td>
-                        <td>33 cm</td>
-                        <td>Heavy Feeder</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Prohibiție Generală (Fluviu)</td>
-                        <td>Toate speciile</td>
-                        <td>60 de zile</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4">Consultă periodic <cite>Ordinul de Prohibiție 2026</cite> pentru actualizări.
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+            <section id="stats" class="zone-5">
+                <h3>Date Tehnice Dunăre</h3>
+                <p>Nivelul apei azi (Giurgiu): <meter value="650" min="100" max="800" low="250" high="600"
+                        optimum="400">650 cm</meter></p>
+                <p>Stoc Mulinete Somn: <meter value="5" min="0" max="100" low="15" high="80" optimum="90">Stoc
+                        redus</meter></p>
+            </section>
+            <section id="video-section" class="zone-6">
+                <h2>Tutoriale si tehnici de pescuit</h2>
+                <div class="iframe-container">
+                    <iframe name="ifr-video" src="https://www.youtube.com/embed/r_Gw42BA4_k" title="Tutorial Pescuit"
+                        allowfullscreen></iframe>
+                    <div class="iframe-tabs">
+                        <a href="https://www.youtube.com/embed/r_Gw42BA4_k" target="ifr-video">Pescuit la Somn pe
+                            Dunăre</a>
+                        <a href="https://www.youtube.com/embed/356RjPALkH4" target="ifr-video">Cum scoți permisul
+                            ANPA</a>
+                        <a href="https://www.youtube.com/embed/OxxzLBjkYvc" target="ifr-video">Procedură Aviz
+                            Frontieră</a>
+                    </div>
+                </div>
+            </section>
 
-        <section id="categorii">
-            <h2>Echipamente Specializate pe Specii</h2>
-            <dl>
-                <dt>Pescuit la Somn</dt>
-                <dd>Lansete de forță, mulinete robuste și <abbr
-                        title="Accesoriu pentru atragerea somnului prin sunet">cloncuri</abbr> artizanale.</dd>
 
-                <dt>Pescuit la Crap</dt>
-                <dd>Lansete heavy, plumbi de curent și <ins>monturi rezistente la scoici</ins>.</dd>
+            <section id="useful-links" class="zone-7">
+                <h2>Link-uri Utile</h2>
+                <ul>
+                    <li>Vizitați site-ul <a href="https://anpa.ro" target="_blank">ANPA</a>.</li>
+                    <li>Descărcați: <a href="./resurse/pdf/cerere-aviz.pdf"
+                            download="Cerere_Pescuit_Dunare_2026.pdf">Cerere PDF</a></li>
+                </ul>
+            </section>
+            <section id="faq" class="zone-8">
+                <h2>Ghid: Obținere permis gratuit</h2>
+                <details>
+                    <summary>Cum pot obține un permis ANPA online?</summary>
+                    <p>Obtinerea unui <b>permis de pescuit recreativ pentru Dunare</b> in Romania este gratuit pe
+                        site-ul ANPA.</p>
+                </details>
+                <details>
+                    <summary>Ce acte am nevoie pentru avizul Politiei de Frontieră?</summary>
+                    <p>Ai nevoie de CI, permisul ANPA și o cerere tip pentru <b>aviz poliția de frontieră</b>.</p>
+                </details>
+            </section>
 
-                <dt>Rapitori Dunăre</dt>
-                <dd>Voblere de adâncime și <i>jig-uri</i> grele (peste 30g) pentru curent.</dd>
-            </dl>
-        </section>
 
-        <section id="evenimente">
-            <h2>Evenimente Comunitare Giurgiu</h2>
-            <ol>
-                <li>
-                    <time datetime="2026-03-15T10:00">15 Martie 2026, ora 10:00</time>:
-                    <b>Lansare Sonare Lowrance</b> - Demonstrație tehnică în portul Giurgiu.
-                </li>
-                <li>
-                    <time datetime="2026-04-05T09:00">5 Aprilie 2026, ora 09:00</time>:
-                    <b>Atelier de monturi de Dunare</b> - Învățăm să facem monturi rezistente pentru <ins>curenți
-                        puternici</ins>.
-                </li>
-            </ol>
-        </section>
-
+        </div>
         <section id="media">
             <h2>Dunărea în Imagini</h2>
             <figure>
@@ -188,79 +234,15 @@
                     <source srcset="./resurse/imagini/image-small.jpg" media="(max-width:700px)">
                     <source srcset="./resurse/imagini/image-medium.jpg" media="(max-width:1200px)">
                     <img src="./resurse/imagini/image-max.jpg" alt="Fluviul Dunarea la Giurgiu"
-                        title="Vedere asupra brațului Ara">
+                        title="Vedere asupra brațului Ara" style="max-width: 100%; height: auto;">
                 </picture>
                 <figcaption>O zi perfectă pentru <em>pescuit la șalău</em> pe malul fluviului.</figcaption>
             </figure>
         </section>
 
-        <section id="video-section">
-            <h2>Tutoriale si tehnici de pescuit</h2>
-
-            <div id="video">
-                <a href="https://www.youtube.com/embed/356RjPALkH4" target="ifr-video">Cum scoți permisul ANPA</a> |
-                <a href="https://www.youtube.com/embed/OxxzLBjkYvc" target="ifr-video">Procedură Aviz Politia de
-                    Frontiera Online</a> |
-                <a href="https://www.youtube.com/embed/r_Gw42BA4_k" target="ifr-video">Pescuit la Somn pe Dunăre</a>
-            </div>
-            <br>
-
-            <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/r_Gw42BA4_k"
-                title="Tutorial Pescuit" allowfullscreen></iframe>
-        </section>
-
-        <section id="nivele">
-            <h3>Date Tehnice Dunăre</h3>
-            <p>Nivelul apei azi (Giurgiu): <meter value="650" min="100" max="800" low="250" high="600" optimum="400">650
-                    cm</meter></p>
-            <p>Stoc Mulinete Somn: <meter value="5" min="0" max="100" low="15" high="80" optimum="90">Stoc redus</meter>
-            </p>
-        </section>
-
-        <section id="faq">
-            <h2>Ghid: Obținere permis pescuit gratuit</h2>
-            <details>
-                <summary>Cum pot obține un permis ANPA online?</summary>
-                <p>Obtinerea unui <b>permis de pescuit recreativ pentru Dunare</b> in Romania este gratuit. Acesta se
-                    face online
-                    accesand
-                    site-ul Agenției
-                    Naționale pentru Pescuit si Acvacultura(ANPA). Este
-                    obligatoriu pentru orice tip de <b>pescuit pe Dunare</b>.</p>
-            </details>
-            <details>
-                <summary>Ce acte am nevoie pentru a obtine avizul de la Politia de Frontieră pentru pescuitul pe Dunare?
-                </summary>
-                <p>Ai nevoie de CI, permisul ANPA și o cerere tip pentru <b>aviz poliția de frontieră</b>.
-                </p>
-            </details>
-        </section>
-
-        <section>
-            <h2>Link-uri Utile</h2>
-            <ul>
-                <li>Vizitați site-ul oficial <a href="https://anpa.ro" target="_blank">ANPA
-                    </a>.</li>
-                <li>Formular Online Aviz Poliția de Frontieră:
-                    <a
-                        href="https://www.politiadefrontiera.ro/ro/main/pg-formular-de-avizare-a-activitatilor-de-pescuit-recreativ--sportiv-in-zona-de-frontiera-pentru-persoane-juridice-251.html#formular">https://www.politiadefrontiera.ro/ro/main/<wbr>pg-formular-de-avizare-<wbr>a-activitatilor-de-pescuit-<wbr>recreativ--sportiv-<wbr>in-zona-de-frontiera-<wbr>pentru-persoane-juridice-251.html<wbr>#formular</a>
-                </li>
-                <li>Vezi modelul de Permis ANPA:
-                    <a href="./resurse/imagini/permis-anpa.jpg">
-                        <img src="./resurse/imagini/permis-anpa.jpg" alt="Model permis" width="30">
-                    </a>
-                </li>
-                <li>Descărcați cererea aviz Anpa:
-                    <a href="./resurse/pdf/cerere-aviz.pdf" download="Cerere_Pescuit_Dunare_2026.pdf">Descarcă Cerere
-                        PDF
-                    </a>
-                </li>
-            </ul>
-        </section>
-
     </main>
 
-    <footer id="subsol">
+    <footer id="main-footer">
         <a href="#top" title="Mergi la începutul paginii">Înapoi la început</a>
         <address>
             <p>Sediu Magazin:<br>
@@ -269,6 +251,10 @@
                 (Locație: <a href="https://www.google.com/maps/search/Facultatea+de+Matematica+si+Informatica+Bucuresti"
                     target="_blank">Facultatea de Matematica si Informatica</a>)
             </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91164.29759133425!2d25.967750762499993!3d44.4355355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1773502653949!5m2!1sro!2sro"
+                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>Telefon (<b>serviciu suport clienti</b>): <a href="tel:+40770426308">0770 426 308</a></p>
             <p>E-mail: <a href="mailto:contact@danubetackle.ro">contact@danubetackle.ro</a></p>
             <p>Suport WhatsApp: <a href="https://wa.me/40770426308" target="_blank">Chat rapid</a></p>
@@ -278,6 +264,11 @@
                     2026</time>.</small></p>
     </footer>
 
+    <a href="#top" id="link-top" title="Mergi la începutul paginii">
+        <div class="rotating-circle"></div>
+        <span class="arrow">&#8593;</span>
+        <span class="tooltip-text">Apasă aici pentru a reveni la începutul paginii</span>
+    </a>
 </body>
 
 </html>
