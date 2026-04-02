@@ -1,0 +1,202 @@
+nav ul.menu > li ul.submenu, nav ul.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.menu > li ul.submenu li::after, nav ul.menu > li ul.submenu li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(to bottom, #ffffff, #000000);
+  transition: height 0.5s ease-in-out;
+}
+
+@keyframes barIntroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px) scaleX(0.5);
+    background-color: #ff0000;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(10px) scaleX(1.2);
+    background-color: #ffff00;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+    background-color: var(--color-light);
+  }
+}
+@keyframes megaOpenMenu {
+  0% {
+    transform: translateX(-100%) rotateY(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+nav {
+  background-color: var(--color-primary);
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+nav #ch-menu, nav #hamburger {
+  display: none;
+}
+nav ul.menu {
+  display: flex;
+  justify-content: center;
+}
+nav ul.menu > li {
+  position: relative;
+  cursor: pointer;
+  width: 13em;
+  height: 3.5em;
+  transition: background-color 0.5s;
+}
+nav ul.menu > li .icon-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 0.5rem;
+  font-size: 1rem;
+  transition: font-size 0.5s;
+  color: var(--color-light);
+  text-decoration: none;
+}
+nav ul.menu > li:hover {
+  background-color: var(--color-light);
+}
+nav ul.menu > li:hover .icon-text-container {
+  color: var(--color-primary);
+  font-size: 1.15rem;
+}
+nav ul.menu > li ul.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background-color: var(--color-primary);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+nav ul.menu > li ul.submenu li {
+  position: relative;
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+nav ul.menu > li ul.submenu li a {
+  color: var(--color-light);
+  text-decoration: none;
+  display: block;
+}
+nav ul.menu > li ul.submenu li::before {
+  left: 0;
+}
+nav ul.menu > li ul.submenu li::after {
+  right: 0;
+}
+nav ul.menu > li ul.submenu li:hover {
+  background-color: var(--color-secondary);
+}
+nav ul.menu > li ul.submenu li:hover::before, nav ul.menu > li ul.submenu li:hover::after {
+  height: 100%;
+}
+nav ul.menu > li:hover ul.submenu {
+  transform: scaleY(1);
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  nav ul.menu > li .text-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav {
+    background-color: transparent !important;
+  }
+  nav #hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: -45px;
+    left: 20px;
+  }
+  nav #hamburger .bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--color-accent);
+    opacity: 0;
+  }
+  nav #hamburger .bar:nth-child(1) {
+    animation: barIntroAnimation 0.6s ease-out forwards;
+    animation-delay: 300ms;
+  }
+  nav #hamburger .bar:nth-child(2) {
+    animation: barIntroAnimation 0.6s ease-out forwards;
+    animation-delay: 600ms;
+  }
+  nav #hamburger .bar:nth-child(3) {
+    animation: barIntroAnimation 0.6s ease-out forwards;
+    animation-delay: 900ms;
+  }
+  nav ul.menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    transform: translateX(-105%);
+    visibility: hidden;
+    transition: transform 1s, visibility 1s;
+  }
+  nav ul.menu > li {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  nav ul.menu > li:first-child .icon-text-container {
+    justify-content: center;
+  }
+  nav ul.menu > li:first-child .icon-text-container .text-icon {
+    display: none;
+  }
+  nav ul.menu > li:first-child .icon-text-container .icon-img {
+    font-size: 2.2rem;
+  }
+  nav ul.menu > li .icon-text-container {
+    justify-content: flex-start;
+    padding: 0 20px;
+    height: 3.5em;
+  }
+  nav ul.menu > li ul.submenu {
+    position: static;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  nav ul.menu > li:hover ul.submenu {
+    transform: scaleX(1);
+    opacity: 1;
+    max-height: 500px;
+  }
+  nav #ch-menu:checked ~ ul.menu {
+    visibility: visible;
+    transform: translateX(0);
+    animation: megaOpenMenu 1s forwards;
+  }
+}/*# sourceMappingURL=nav.css.map */

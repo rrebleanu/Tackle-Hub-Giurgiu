@@ -12,29 +12,23 @@
     <title>Danube Tackle Hub Giurgiu</title>
     <meta name="msapplication-TileColor" content="#004a99">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./resurse/imagini/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./resurse/imagini/favicon/favicon.svg" />
     <link rel="shortcut icon" href="./resurse/imagini/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./resurse/imagini/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" />
 
-    <!-- Conectare css -->
     <link rel="stylesheet" type="text/css" href="./resurse/css/general.css">
-    <link rel="stylesheet" href="/resurse/css/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/resurse/css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./resurse/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="./resurse/css/print.css" type="text/css" media="print" />
 
-    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -42,10 +36,20 @@
     <header id="top">
         <h1>Danube Tackle Hub <i class="fa-solid fa-anchor fa-beat-fade"></i> <span>Giurgiu</span></h1>
         <nav>
-            <ul class="meniu">
+            <input type="checkbox" id="ch-menu">
+            <label id="hamburger" for="ch-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <ul class="menu">
                 <li>
-                    <div>Acasa</div>
-                    <ul>
+                    <div class="icon-text-container">
+                        <div class="text-icon">Acasa</div>
+                        <div class="icon-img"><i class="fa-solid fa-house"></i></div>
+                    </div>
+                    <ul class="submenu">
                         <li><a href="#welcome">Bine ati venit</a></li>
                         <li><a href="#categories">Categorii Specii Dunare</a></li>
                         <li><a href="#prohibition">Perioada Prohibiție</a></li>
@@ -54,8 +58,11 @@
                     </ul>
                 </li>
                 <li>
-                    <div>Produse</div>
-                    <ul>
+                    <div class="icon-text-container">
+                        <div class="text-icon">Produse</div>
+                        <div class="icon-img"><i class="fa-solid fa-box-open"></i></div>
+                    </div>
+                    <ul class="submenu">
                         <li><a href="#">Pescuit la Somn</a></li>
                         <li><a href="#">Pescuit la Crap</a></li>
                         <li><a href="#">Rapitori - Spinning</a></li>
@@ -63,9 +70,30 @@
                         <li><a href="#">Barci & Motoare</a></li>
                     </ul>
                 </li>
-                <li><a href="blog.html">Blog Pescuit</a></li>
-                <li><a href="permise.html">Ghid ANPA & PG</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="blog.html">
+                        <div class="icon-text-container">
+                            <div class="text-icon">Blog Pescuit</div>
+                            <div class="icon-img"><i class="fa-solid fa-book"></i></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="permise.html">
+                        <div class="icon-text-container">
+                            <div class="text-icon">Ghid ANPA & PG</div>
+                            <div class="icon-img"><i class="fa-solid fa-id-card"></i></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <div class="icon-text-container">
+                            <div class="text-icon">Contact</div>
+                            <div class="icon-img"><i class="fa-solid fa-envelope"></i></div>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -187,6 +215,7 @@
                 <p>Stoc Mulinete Somn: <meter value="5" min="0" max="100" low="15" high="80" optimum="90">Stoc
                         redus</meter></p>
             </section>
+
             <section id="video-section" class="zone-6">
                 <h2>Tutoriale si tehnici de pescuit</h2>
                 <div class="iframe-container">
@@ -203,7 +232,6 @@
                 </div>
             </section>
 
-
             <section id="useful-links" class="zone-7">
                 <h2>Link-uri Utile</h2>
                 <ul>
@@ -212,6 +240,7 @@
                             download="Cerere_Pescuit_Dunare_2026.pdf">Cerere PDF</a></li>
                 </ul>
             </section>
+
             <section id="faq" class="zone-8">
                 <h2>Ghid: Obținere permis gratuit</h2>
                 <details>
@@ -224,7 +253,6 @@
                     <p>Ai nevoie de CI, permisul ANPA și o cerere tip pentru <b>aviz poliția de frontieră</b>.</p>
                 </details>
             </section>
-
 
         </div>
         <section id="media">
@@ -260,13 +288,13 @@
             <p>Suport WhatsApp: <a href="https://wa.me/40770426308" target="_blank">Chat rapid</a></p>
             <p><b>Program magazin pescuit Dunare</b>: Luni-Sâmbătă, 08:00 - 18:00</p>
         </address>
-        <p><small>&copy; 2026 Danube Tackle Hub Giurgiu. Creat la data de <time datetime="2026-03-02">2 martie
+        <p><small>© 2026 Danube Tackle Hub Giurgiu. Creat la data de <time datetime="2026-03-02">2 martie
                     2026</time>.</small></p>
     </footer>
 
     <a href="#top" id="link-top" title="Mergi la începutul paginii">
         <div class="rotating-circle"></div>
-        <span class="arrow">&#8593;</span>
+        <span class="arrow">↑</span>
         <span class="tooltip-text">Apasă aici pentru a reveni la începutul paginii</span>
     </a>
 </body>
