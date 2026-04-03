@@ -1,3 +1,7 @@
+#banner-proiect {
+  display: none;
+}
+
 @media print {
   @page {
     size: A4 portrait;
@@ -32,7 +36,7 @@
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3) !important;
     z-index: -1;
     pointer-events: none;
   }
@@ -63,6 +67,7 @@
     border: none;
     box-shadow: none;
     padding: 0;
+    position: relative;
   }
   header h1 {
     text-align: center;
@@ -77,14 +82,14 @@
     background: none;
   }
   header nav ul.menu {
-    display: block;
+    display: block !important;
     width: 80%;
     margin: 0 auto;
     padding-left: 2rem;
-    list-style-type: disc;
+    list-style-type: disc !important;
   }
   header nav ul.menu > li {
-    display: list-item;
+    display: list-item !important;
     width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -93,29 +98,29 @@
     text-align: left;
   }
   header nav ul.menu > li .icon-text-container, header nav ul.menu > li .text-icon, header nav ul.menu > li > a {
-    display: inline;
+    display: inline !important;
     padding: 0;
     font-weight: bold;
   }
   header nav ul.menu > li ul.submenu {
-    display: block;
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    list-style-type: circle;
+    display: block !important;
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    list-style-type: circle !important;
     padding-left: 2rem;
-    background: none;
-    max-height: none;
+    background: none !important;
+    max-height: none !important;
   }
   header nav ul.menu > li ul.submenu li {
-    display: list-item;
-    border: none;
+    display: list-item !important;
+    border: none !important;
     padding: 5px 0;
   }
   header nav ul.menu > li ul.submenu li a {
-    padding: 0;
-    font-weight: normal;
+    padding: 0 !important;
+    font-weight: normal !important;
   }
   header nav {
     -moz-column-break-after: page;
@@ -126,8 +131,8 @@
     display: block !important;
   }
   #page-grid section {
-    display: block;
-    box-shadow: none;
+    display: block !important;
+    box-shadow: none !important;
     border: 1px solid #ccc;
     margin-bottom: 20px;
     -moz-column-break-inside: avoid;
@@ -135,20 +140,17 @@
     page-break-inside: avoid;
   }
   footer#main-footer {
-    display: block;
+    display: block !important;
     box-shadow: none;
     border: none;
     text-align: center;
-    background: none;
-    color: black;
+    background: none !important;
+    color: black !important;
     -moz-column-break-before: page;
          break-before: page;
     page-break-before: always;
   }
   footer#main-footer iframe {
-    display: none;
+    display: none !important;
   }
-}
-#banner-proiect {
-  display: none;
 }/*# sourceMappingURL=print.css.map */

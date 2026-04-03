@@ -2,7 +2,7 @@ body {
     --color-primary: #2D5A27;
     --color-secondary: #93B5C6;
     --color-accent: #111C14;
-    --color-light: #F9F6E8;
+    --color-light: #eae3c5;
     --color-border: #5C6B52;
     --page-margin: 5vw;
     --grid-gap: 25px;
@@ -148,8 +148,8 @@ table thead th {
     padding: 12px;
 }
 
-table tbody tr:nth-child(even) { background-color: rgba(147, 181, 198, 0.7); }
-table tbody tr:nth-child(odd) { background-color: rgba(92, 107, 82, 0.5); }
+table tbody tr:nth-child(even) { background-color: rgba(208, 220, 226, 0.7); }
+table tbody tr:nth-child(odd) { background-color: rgba(198, 243, 168, 0.5); }
 
 table tbody tr { transition: background-color 0.5s ease; }
 table tbody tr:hover { background-color: var(--color-secondary) !important; }
@@ -234,10 +234,6 @@ table th, table td {
     #page-grid { display: block; }
     #page-grid > section { margin-bottom: 15px; }
     table { border-spacing: 0; border-collapse: collapse; }
-    *, *::before, *::after {
-        animation: none !important;
-        transition: none !important;
-    }
 }
 
 img, video {
@@ -248,3 +244,8 @@ img, video {
     display: block;
     margin: 0 auto;
 }
+
+#banner-proiect {
+    display: none;
+}
+

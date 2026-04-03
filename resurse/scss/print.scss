@@ -1,3 +1,176 @@
+// @media print {
+//     @page {
+//         size: A4 portrait;
+//     }
+    
+//     @page :left {
+//         margin-left: 2cm;
+//         margin-right: 1cm;
+//     }
+    
+//     @page :right {
+//         margin-left: 1cm;
+//         margin-right: 2cm;
+//     }
+
+//     body {
+//         background: white !important;
+//         color: black !important;
+//         font-family: 'Times New Roman', serif; 
+//         margin: 0;
+//         padding: 0;
+//     }
+
+//     body::after {
+//         content: "Rebleanu\A Robert"; 
+//         white-space: pre;
+//         position: fixed;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         width: 60%;
+//         height: 10%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         font-size: 3rem;
+//         font-weight: bold;
+//         color: rgba(0, 0, 0, 0.3); 
+//         z-index: -1;
+//         pointer-events: none;
+//     }
+
+//     img, video, iframe, figure, figcaption, picture, source, 
+//     #link-top, .iframe-tabs, .iframe-container, #hamburger, #ch-menu, 
+//     .icon-img {
+//         display: none !important;
+//     }
+
+//     a {
+//         color: black !important;
+//         text-decoration: none !important;
+//         font-weight: normal !important;
+//     }
+
+//     #banner-proiect {
+//         display: block !important;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         width: 50%;
+//         border: 4px double black;
+//         padding: 10px;
+//         margin: 0;
+//         text-align: center;
+//         font-weight: bold;
+//         box-sizing: border-box;
+//     }
+
+//     header {
+//         border: none;
+//         box-shadow: none;
+//         padding: 0;
+
+//         h1 {
+//             text-align: center;
+//             margin-top: 60px; 
+//             margin-bottom: 2rem;
+//             border-bottom: 1px solid black;
+//             padding-bottom: 10px;
+//         }
+
+//         nav {
+//             display: block;
+//             width: 100%;
+//             background: none;
+            
+//             ul.menu {
+//                 display: block;
+//                 width: 80%;
+//                 margin: 0 auto;
+//                 padding-left: 2rem;
+//                 list-style-type: disc;
+                
+//                 > li {
+//                     display: list-item;
+//                     width: 100%;
+//                     height: auto;
+//                     margin-bottom: 10px;
+//                     background: none;
+//                     border: none;
+//                     text-align: left;
+
+//                     .icon-text-container, .text-icon, > a {
+//                         display: inline;
+//                         padding: 0;
+//                         font-weight: bold;
+//                     }
+
+//                     ul.submenu {
+//                         display: block;
+//                         position: static;
+//                         transform: none;
+//                         opacity: 1;
+//                         visibility: visible;
+//                         list-style-type: circle;
+//                         padding-left: 2rem;
+//                         background: none;
+//                         max-height: none;
+
+//                         li {
+//                             display: list-item;
+//                             border: none;
+//                             padding: 5px 0;
+//                             a { padding: 0; font-weight: normal; }
+//                         }
+//                     }
+//                 }
+//             }
+            
+//             break-after: page;
+//             page-break-after: always;
+//         }
+//     }
+
+//     #page-grid {
+//         display: block !important;
+        
+//         section {
+//             display: block;
+//             box-shadow: none;
+//             border: 1px solid #ccc;
+//             margin-bottom: 20px;
+//             break-inside: avoid; 
+//             page-break-inside: avoid;
+//         }
+//     }
+
+//     footer#main-footer {
+//         display: block;
+//         box-shadow: none;
+//         border: none;
+//         text-align: center;
+//         background: none;
+//         color: black;
+        
+//         break-before: page;
+//         page-break-before: always;
+
+//         iframe {
+//             display: none; 
+//         }
+//     }
+// }
+
+// #banner-proiect {
+//     display: none;
+// }
+
+#banner-proiect {
+    display: none;
+}
+
 @media print {
     @page {
         size: A4 portrait;
@@ -36,7 +209,7 @@
         text-align: center;
         font-size: 3rem;
         font-weight: bold;
-        color: rgba(0, 0, 0, 0.3); 
+        color: rgba(0, 0, 0, 0.3) !important; 
         z-index: -1;
         pointer-events: none;
     }
@@ -71,6 +244,7 @@
         border: none;
         box-shadow: none;
         padding: 0;
+        position: relative; 
 
         h1 {
             text-align: center;
@@ -86,14 +260,14 @@
             background: none;
             
             ul.menu {
-                display: block;
+                display: block !important;
                 width: 80%;
                 margin: 0 auto;
                 padding-left: 2rem;
-                list-style-type: disc;
+                list-style-type: disc !important;
                 
                 > li {
-                    display: list-item;
+                    display: list-item !important;
                     width: 100%;
                     height: auto;
                     margin-bottom: 10px;
@@ -102,27 +276,27 @@
                     text-align: left;
 
                     .icon-text-container, .text-icon, > a {
-                        display: inline;
+                        display: inline !important;
                         padding: 0;
                         font-weight: bold;
                     }
 
                     ul.submenu {
-                        display: block;
-                        position: static;
-                        transform: none;
-                        opacity: 1;
-                        visibility: visible;
-                        list-style-type: circle;
+                        display: block !important;
+                        position: static !important;
+                        transform: none !important;
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        list-style-type: circle !important;
                         padding-left: 2rem;
-                        background: none;
-                        max-height: none;
+                        background: none !important;
+                        max-height: none !important;
 
                         li {
-                            display: list-item;
-                            border: none;
+                            display: list-item !important;
+                            border: none !important;
                             padding: 5px 0;
-                            a { padding: 0; font-weight: normal; }
+                            a { padding: 0 !important; font-weight: normal !important; }
                         }
                     }
                 }
@@ -137,8 +311,8 @@
         display: block !important;
         
         section {
-            display: block;
-            box-shadow: none;
+            display: block !important;
+            box-shadow: none !important;
             border: 1px solid #ccc;
             margin-bottom: 20px;
             break-inside: avoid; 
@@ -147,22 +321,18 @@
     }
 
     footer#main-footer {
-        display: block;
+        display: block !important;
         box-shadow: none;
         border: none;
         text-align: center;
-        background: none;
-        color: black;
+        background: none !important;
+        color: black !important;
         
         break-before: page;
         page-break-before: always;
 
         iframe {
-            display: none; 
+            display: none !important; 
         }
     }
-}
-
-#banner-proiect {
-    display: none;
 }
