@@ -249,3 +249,26 @@ img, video {
     display: none;
 }
 
+
+/* stilizare video vtt */
+#video-vtt {
+    width: 80%; 
+    min-width: 300px;
+    max-width: 900px; 
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* stilizare subtitrari */
+::cue {
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: var(--color-accent); 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+

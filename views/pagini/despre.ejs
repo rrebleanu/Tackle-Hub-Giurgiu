@@ -6,7 +6,6 @@
 </head>
 
 <body>
-
     <%- include('../fragmente/header') %>
 
         <main>
@@ -14,15 +13,30 @@
                 <h2>Despre Magazinul Nostru</h2>
                 <p style="max-width: 800px; margin: 20px auto; line-height: 1.6;">
                     Suntem pasionați de Dunăre încă de mici. Magazinul <strong>Danube Tackle Hub</strong> a luat naștere
-                    din dorința de a aduce echipament premium, dedicat pescuitului în curenți puternici, pescarilor din
-                    județul Giurgiu și nu numai. Cunoaștem locurile, cunoaștem peștele și mai ales... cunoaștem uneltele
-                    potrivite!
+                    din dorința de a aduce echipament premium, dedicat pescuitului în curenți puternici.
+                    <br><br>
+                    Verifică <a href="/index">pagina principală</a> pentru noutăți sau vizitează site-ul
+                    <a href="https://www.anpa.ro" target="_blank">ANPA</a> pentru permise (link extern).
                 </p>
+            </section>
+
+            <section id="zona-video" style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+                <h3>Prezentare Video Magazin</h3>
+
+                <video id="video-vtt" controls poster="/resurse/video/poster.jpg" preload="metadata">
+                    <source src="/resurse/video/prezentare.mp4" type="video/mp4">
+                    <source src="/resurse/video/prezentare.webm" type="video/webm">
+
+                    <track src="/resurse/vtt/subtitrari_ro.vtt" kind="subtitles" srclang="ro" label="Română" default>
+                    <track src="/resurse/vtt/subtitrari_en.vtt" kind="subtitles" srclang="en" label="English">
+
+                    <p>Browserul tău nu suportă elementul video. Îl poți descărca de <a
+                            href="/resurse/video/prezentare.mp4">aici</a>.</p>
+                </video>
             </section>
         </main>
 
         <%- include('../fragmente/footer') %>
-
 </body>
 
 </html>
