@@ -272,3 +272,42 @@ img, video {
     font-weight: bold;
 }
 
+/* stilizare linkuri pagina  */
+
+a:visited {
+    color: var(--color-primary);
+}
+
+a[href^="http"] {
+    display: inline-block;
+}
+
+a[href^="http"]::before {
+    content: "⮳ ";
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+a[href^="http"]:hover::before {
+    color: var(--color-secondary);
+}
+
+main a {
+    position: relative;
+    background-image: radial-gradient(circle, var(--color-secondary) 0%, var(--color-secondary) 40%, transparent 80%, transparent 100%);
+    background-position: center;
+    background-size: 0% 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out; 
+    padding: 2px 6px; 
+    border-radius: 4px;
+    color: var(--color-accent);
+}
+
+main a:hover {
+    background-size: 100% 100%;
+}
+
+main a:active {
+    outline: 2px solid var(--color-accent); 
+}
