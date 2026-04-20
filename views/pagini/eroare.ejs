@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <%- include('../fragmente/head') %>
+        <style>
+            .eroare-container {
+                text-align: center;
+                padding: 100px 20px;
+                background-color: var(--culoare-background-sectiune, #f9f9f9);
+                margin: 40px auto;
+                max-width: 800px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .eroare-container img {
+                max-width: 250px;
+                margin: 20px auto;
+            }
+
+            .eroare-container h2 {
+                color: var(--color-primary, #004a99);
+            }
+        </style>
+</head>
+
+<body>
+
+    <%- include('../fragmente/header') %>
+
+        <main>
+            <div class="eroare-container">
+                <h2>
+                    <%= titlu %>
+                </h2>
+                <img src="<%= imagine %>" alt="Imagine Eroare">
+                <p>
+                    <%= text %>
+                </p>
+                <br><br>
+                <a href="/" style="font-weight: bold; text-decoration: underline;">&larr; Înapoi pe Acasă</a>
+            </div>
+        </main>
+
+        <%- include('../fragmente/footer') %>
+
+</body>
+
+</html>

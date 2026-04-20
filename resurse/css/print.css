@@ -123,8 +123,7 @@
     font-weight: normal !important;
   }
   header nav {
-    -moz-column-break-after: page;
-         break-after: page;
+    break-after: page;
     page-break-after: always;
   }
   #page-grid {
@@ -135,8 +134,7 @@
     box-shadow: none !important;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    -moz-column-break-inside: avoid;
-         break-inside: avoid;
+    break-inside: avoid;
     page-break-inside: avoid;
   }
   footer#main-footer {
@@ -146,11 +144,10 @@
     text-align: center;
     background: none !important;
     color: black !important;
-    -moz-column-break-before: page;
-         break-before: page;
+    break-before: page;
     page-break-before: always;
   }
   footer#main-footer iframe {
     display: none !important;
   }
-}/*# sourceMappingURL=print.css.map */
+}

@@ -1,0 +1,52 @@
+{
+    "cale_baza": "/resurse/imagini/erori",
+    "eroare_default": {
+        "titlu": "Eroare Internă",
+        "text": "A apărut o eroare neașteptată. Fir întins în altă parte până remediem problema!",
+        "imagine": "eroare-generala.jpg"
+    },
+    "info_erori": [
+        {
+            "identificator": 404,
+            "status": true,
+            "titlu": "404 - Pagina nu a fost găsită",
+            "text": "Nu am găsit nicio captură aici! Pagina pe care o cauți nu există pe Danube Tackle Hub.",
+            "imagine": "eroare-404.jpg"
+        },
+        {
+            "identificator": 403,
+            "status": true,
+            "titlu": "403 - Acces Interzis",
+            "text": "Acces interzis! Nu ai permisiunea să intri în această zonă a serverului.",
+            "imagine": "wrong-way.jpg"
+        },
+        {
+            "identificator": 400,
+            "status": true,
+            "titlu": "400 - Cerere Greșită",
+            "text": "Cerere invalidă. Nu poți accesa fișierele de tip EJS direct din browser.",
+            "imagine": "eroare-400.jpg"
+        },
+        {
+            "identificator": 1,
+            "status": false,
+            "titlu": "Site în lucru",
+            "text": "Muncim din greu la această secțiune. Pregătim noile echipamente de pescuit!",
+            "imagine": "site-in-lucru.jpg"
+        },
+        {
+            "identificator": 2,
+            "status": false,
+            "titlu": "Eroare bază de date",
+            "text": "Baza noastră de date e momentan la fundul apei. Te rugăm să revii mai târziu!",
+            "imagine": "eroare-baza-date.jpg"
+        },
+        {
+            "identificator": 3,
+            "status": false,
+            "titlu": "Date introduse greșit",
+            "text": "Datele pe care le-ai introdus sunt incorecte. Verifică și încearcă din nou.",
+            "imagine": "date-gresite.jpg"
+        }
+    ]
+}
