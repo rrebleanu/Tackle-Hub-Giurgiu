@@ -1,0 +1,79 @@
+{
+  "cale_galerie": "resurse/imagini/galerie",
+  "imagini": [
+    {
+      "cale_imagine": "mulineta.jpg",
+      "titlu": "Mulineta Shimano",
+      "descriere": "Mulineta robusta pentru crap.",
+      "sfert_ora": "1",
+      "alt": "Mulineta crap"
+    },
+    {
+  "cale_imagine": "lanseta.jpg",
+  "titlu": "Lansetă la Mahamaya",
+  "descriere": "Echipament pregătit pe malul apei.",
+  "sfert_ora": "1",
+  "autor": "Fotografie de Moheen Reeyad, licență CC BY-SA 4.0"
+    },
+    {
+      "cale_imagine": "carlige.jpg",
+      "titlu": "Carlige Gamakatsu",
+      "descriere": "Ascutire chimica perfecta.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "minciog.jpg",
+      "titlu": "Minciog Pliabil",
+      "descriere": "Plasa moale, nu raneste pestii.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "momeala1.jpg",
+      "titlu": "Boilies Squid",
+      "descriere": "Atractie rapida pentru somn.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "cort.jpg",
+      "titlu": "Cort Pescuit",
+      "descriere": "Rezistenta la ploaie torentiala.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "scaun.jpg",
+      "titlu": "Scaun Confort",
+      "descriere": "Spatar reglabil si cotiere.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "sonar.jpg",
+      "titlu": "Sonar Deeper",
+      "descriere": "Detecteaza structurile subacvatice.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "fir.jpg",
+      "titlu": "Fir Textil",
+      "descriere": "Rezistenta la abraziune maxima.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "plumbi.jpg",
+      "titlu": "Plumbi Crap",
+      "descriere": "Camuflaj perfect pe fundul apei.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "barca.jpg",
+      "titlu": "Barca Pneumatica",
+      "descriere": "Material PVC ranforsat.",
+      "sfert_ora": "1"
+    },
+    {
+      "cale_imagine": "motor.jpg",
+      "titlu": "Motor Electric",
+      "descriere": "Silentios, ideal pentru delta.",
+      "sfert_ora": "1"
+    }
+  ]
+}

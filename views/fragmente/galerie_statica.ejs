@@ -1,0 +1,28 @@
+<div class="container-galerie-statica">
+    <% if (locals.imaginiGalerie && locals.imaginiGalerie.length> 0) { %>
+        <% locals.imaginiGalerie.forEach(function(img) { %>
+            <figure class="item-galerie-statica">
+                <picture>
+                    <source srcset="/<%= locals.caleGalerie %>/mic/<%= img.cale_imagine %>" media="(max-width: 700px)">
+                    <source srcset="/<%= locals.caleGalerie %>/mediu/<%= img.cale_imagine %>"
+                        media="(max-width: 1200px)">
+                    <img src="/<%= locals.caleGalerie %>/<%= img.cale_imagine %>" alt="<%= img.alt || img.titlu %>"
+                        title="<%= img.descriere %>">
+                </picture>
+                <figcaption>
+                    <span class="titlu-imagine">
+                        <%= img.titlu %>
+                    </span>
+                    <span class="descriere-imagine">
+                        <%= img.descriere %>
+                    </span>
+                    <% if (img.autor) { %>
+                        <small class="licenta-imagine">
+                            <%= img.autor %>
+                        </small>
+                        <% } %>
+                </figcaption>
+            </figure>
+            <% }); %>
+                <% } %>
+</div>

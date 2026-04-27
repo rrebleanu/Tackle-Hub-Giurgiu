@@ -29,7 +29,7 @@ $hamburger-delay: 300ms;
 @keyframes barIntroAnimation {
     0% { opacity: 0; transform: translateX(-20px) scaleX(0.5); background-color: #ff0000; }
     50% { opacity: 0.5; transform: translateX(10px) scaleX(1.2); background-color: #ffff00; }
-    100% { opacity: 1; transform: translateX(0) scaleX(1); background-color: var(--color-light); }
+    100% { opacity: 1; transform: translateX(0) scaleX(1); background-color: var(--color-primary); }
 }
 
 @keyframes megaOpenMenu {
@@ -145,7 +145,7 @@ nav {
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 0;
+        padding: 100px 0;
 
         #hamburger {
             display: flex !important;
@@ -162,7 +162,7 @@ nav {
                 height: 4px;
                 border-radius: 2px;
                 background-color: var(--color-accent);
-                opacity: 0;
+                opacity: 1;
 
                 @for $i from 1 through 3 {
                     &:nth-child(#{$i}) {

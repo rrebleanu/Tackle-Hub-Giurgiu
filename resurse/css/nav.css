@@ -28,7 +28,7 @@ nav ul.menu > li ul.submenu li::after, nav ul.menu > li ul.submenu li::before {
   100% {
     opacity: 1;
     transform: translateX(0) scaleX(1);
-    background-color: var(--color-light);
+    background-color: var(--color-primary);
   }
 }
 @keyframes megaOpenMenu {
@@ -154,7 +154,7 @@ nav ul.menu > li:hover ul.submenu {
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 0;
+    padding: 100px 0;
   }
   nav #hamburger {
     display: flex !important;
@@ -171,7 +171,7 @@ nav ul.menu > li:hover ul.submenu {
     height: 4px;
     border-radius: 2px;
     background-color: var(--color-accent);
-    opacity: 0;
+    opacity: 1;
   }
   nav #hamburger .bar:nth-child(1) {
     animation: barIntroAnimation 0.6s ease-out forwards;
